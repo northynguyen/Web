@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thành viên</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+
+
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Address</th>
+            <th>Phone number</th>
+            <th>Gender</th>
+        </tr>
+        <% for(var i=0; i < dataUser.length; i++) { %>
+            <tr>
+                <td>
+                    <%= dataUser[i].id %>
+                </td>
+                <td>
+                    <%= dataUser[i].email %>
+                </td>
+                <td>
+                    <%= dataUser[i].firstName %>
+                </td>
+                <td>
+                    <%= dataUser[i].lastName %>
+                </td>
+                <td>
+                    <%= dataUser[i].address %>
+                </td>
+                <td>
+                    <%= dataUser[i].phoneNumber %>
+                </td>
+                <td>
+                    <%= dataUser[i].gender %>
+                </td>
+            </tr>
+            <% } %>
+    </table>
+
+</body>
+
+</html>

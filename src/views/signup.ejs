@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng kí tài khoản</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <form action="/crud" method="POST">
+        <div class="h-100 bg-dark">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <div class="card card-registration my-4">
+                            <div class="row g-0">
+                                <div class="col-xl-6 d-none d-xl-block">
+                                    <img src="https://i.redd.it/8x7bp27ljhn81.jpg" alt="Sample photo" class="img-fluid"
+                                        style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+                                </div>
+
+                                <div class="col-xl-6">
+                                    <div class="card-body p-md-5 text-black">
+                                        <h2 class="mb-5 text-uppercase">Sign in</h2>
+                                        <div class="row mb-2">
+                                            <div class="form-outline">
+                                                <input type="email" name="email" class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1m">Email</label>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="form-outline">
+                                                <input type="password" name="password"
+                                                    class="form-control form-control-lg" />
+                                                <label class="form-label" for="form3Example1n">Password</label>
+                                            </div>
+                                        </div>
+                                        <div class="row  mb-2">
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <input type="text" name="firstName"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example1m1">First name</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-outline">
+                                                    <input type="text" name="lastName"
+                                                        class="form-control form-control-lg" />
+                                                    <label class="form-label" for="form3Example1n1">Last name</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-2">
+                                            <input type="text" name="address" class="form-control form-control-lg" />
+                                            <label class="form-label" for="form3Example8">Address</label>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" name="phoneNumber" class="form-control" />
+                                                <label class="form-label" for="form3Example9">Phone number</label>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <select name="gender" class="form-control">
+                                                    <option value="1">Male</option>
+                                                    <option value="0">Female</option>
+                                                </select>
+                                                <label for="inputState">Gender</label>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <select name="roleID" class="form-control">
+                                                    <option value="1">Client</option>
+                                                    <option value="0">Admin</option>
+                                                    <option value="2">Staff</option>
+                                                </select>
+                                                <label for="inputState">Role</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="row justify-content-end pt-4">
+                                            <div class="col-md-3">
+                                                <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <button type="submit button" class="btn btn-warning btn-lg">Sign
+                                                    in</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>
